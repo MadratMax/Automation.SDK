@@ -1,0 +1,8 @@
+/Users/maksimgajdideev/Projects/algorithms/algorithms/bin/Debug/netcoreapp1.1/algorithms.deps.json
+/Users/maksimgajdideev/Projects/algorithms/algorithms/bin/Debug/netcoreapp1.1/algorithms.runtimeconfig.json
+/Users/maksimgajdideev/Projects/algorithms/algorithms/bin/Debug/netcoreapp1.1/algorithms.runtimeconfig.dev.json
+/Users/maksimgajdideev/Projects/algorithms/algorithms/bin/Debug/netcoreapp1.1/algorithms.dll
+/Users/maksimgajdideev/Projects/algorithms/algorithms/bin/Debug/netcoreapp1.1/algorithms.pdb
+/Users/maksimgajdideev/Projects/algorithms/algorithms/obj/Debug/netcoreapp1.1/algorithms.AssemblyInfo.cs
+/Users/maksimgajdideev/Projects/algorithms/algorithms/obj/Debug/netcoreapp1.1/algorithms.dll
+/Users/maksimgajdideev/Projects/algorithms/algorithms/obj/Debug/netcoreapp1.1/algorithms.pdb
