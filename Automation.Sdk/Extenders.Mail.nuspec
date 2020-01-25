@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Automation.Sdk.Extenders.Mail</id>
+    <version>1.0.0</version>
+    <authors>Max</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automation Mail Bindings</description>
+    <dependencies>
+      <dependency id="Automation.SDK" version="1.4.20.0" />
+	  <dependency id="OpenPop.NET" version="2.0.6.1120" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Automation.Sdk.Extenders.Mail\bin\Release\Automation.Sdk.Extenders.Mail.dll" target="lib\net452" />
+	<file src="Automation.Sdk.Extenders.Mail\bin\Release\SendEmail.exe" target="content" />
+  </files>
+</package>

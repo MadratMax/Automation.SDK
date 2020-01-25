@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Automation.SDK.RetryExtension</id>
+    <version>0.0.1</version>
+    <authors>Max</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automation Retry Extension for SpecFlow</description>
+    <dependencies>
+      <dependency id="SpecFlow" version="2.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Automation.Sdk.GenerationPlugin.SpecFlowPlugin\bin\Release\Automation.Sdk.GenerationPlugin.SpecFlowPlugin.dll" target="content" />
+	<file src="Automation.Sdk.GenerationPlugin.SpecFlowPlugin\App.config.transform" target="content" />
+  </files>
+</package>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Automation.SDK</id>
+    <version>1.6.0.0</version>
+    <authors>Max</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automation SDK</description>
+    <dependencies>
+      <dependency id="CommonServiceLocator" version="1.3" />
+      <dependency id="FluentAssertions" version="4.19.2" />
+      <dependency id="JetBrains.Annotations" version="10.4.0" />
+      <dependency id="Microsoft.TestApi" version="0.6.0.0" />
+      <dependency id="NUnit" version="2.6.4" />
+      <dependency id="Rx-Core" version="2.2.5" />
+      <dependency id="Rx-Interfaces" version="2.2.5" />
+      <dependency id="Rx-Linq" version="2.2.5" />
+      <dependency id="Rx-Main" version="2.2.5" />
+      <dependency id="Rx-PlatformServices" version="2.2.5" />
+      <dependency id="SpecFlow" version="2.1.0" />
+      <dependency id="Unity" version="4.0.1" />
+      <dependency id="Unity.Interception" version="4.0.1" />
+      <!--<dependency id="Automation.Tracer.Driver" version="1.0.3.0" />
+      <dependency id="Automation.Tracer.Contract" version="1.0.1.0" />-->
+	    <dependency id="Selenium.WebDriver" version="3.4.0" />
+	    <dependency id="Selenium.Support" version="2.53.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Automation.Sdk.UIWrappers\bin\Debug\Automation.Sdk.UIWrappers.dll" target="lib\net452" />
+    <file src="Automation.Sdk.UIWrappers\bin\Debug\Automation.Sdk.UIWrappers.pdb" target="lib\net452" />
+    <file src="Automation.Sdk.Bindings\bin\Debug\Automation.Sdk.Bindings.dll" target="lib\net452" />
+    <file src="Automation.Sdk.Bindings\bin\Debug\Automation.Sdk.Bindings.pdb" target="lib\net452" />
+    <file src="Automation.Sdk.RuntimePlugin.SpecFlowPlugin\bin\Debug\Automation.Sdk.RuntimePlugin.SpecFlowPlugin.dll" target="lib\net452" />
+    <file src="Automation.Sdk.RuntimePlugin.SpecFlowPlugin\bin\Debug\Automation.Sdk.RuntimePlugin.SpecFlowPlugin.pdb" target="lib\net452" />
+    <file src="App.config.transform" target="content" />
+  </files>
+</package>

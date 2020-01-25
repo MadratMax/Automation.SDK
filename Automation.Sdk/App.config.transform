@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="sdk"
+             type="Automation.Sdk.UIWrappers.Configuration.AutomationSdkConfigurationSection, Automation.Sdk.UIWrappers" />
+  </configSections>
+  <sdk>
+  </sdk>
+</configuration>

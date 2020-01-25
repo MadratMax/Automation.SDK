@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Automation.Sdk.UIWrappers</RootNamespace>
+    <AssemblyName>Automation.Sdk.UIWrappers</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentAssertions, Version=4.19.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.2\lib\net45\FluentAssertions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentAssertions.Core, Version=4.19.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.2\lib\net45\FluentAssertions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Annotations, Version=10.4.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.Annotations.10.4.0\lib\net\JetBrains.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.4.0.1\lib\Net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.4.0.1\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TestApiCore, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestApi.0.6.0.0\lib\net40\TestApiCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TestApiWpf, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestApi.0.6.0.0\lib\net40\TestApiWpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WebDriver, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\Desktop\ClickAdapter.cs" />
+    <Compile Include="Adapters\Desktop\ContainerAdapter.cs" />
+    <Compile Include="Adapters\Desktop\EnableAdapter.cs" />
+    <Compile Include="Adapters\Desktop\FocusAdapter.cs" />
+    <Compile Include="Adapters\Desktop\FocusValidator.cs" />
+    <Compile Include="Adapters\IAdapter.cs" />
+    <Compile Include="Adapters\IContainerAdapter.cs" />
+    <Compile Include="Adapters\IEnableAdapter.cs" />
+    <Compile Include="Adapters\IFocusAdapter.cs" />
+    <Compile Include="Adapters\IFocusValidator.cs" />
+    <Compile Include="Adapters\IKeyboardInputAdapter.cs" />
+    <Compile Include="Adapters\ISelectionAdapter.cs" />
+    <Compile Include="Adapters\ITextAdapter.cs" />
+    <Compile Include="Adapters\IValueAdapter.cs" />
+    <Compile Include="Adapters\IVisibilityAdapter.cs" />
+    <Compile Include="Adapters\Desktop\KeyboardInputAdapter.cs" />
+    <Compile Include="Adapters\Desktop\Operators\IListItemFinder.cs" />
+    <Compile Include="Adapters\Desktop\Operators\WinFormListItemFinder.cs" />
+    <Compile Include="Adapters\Desktop\Operators\WpfListItemFinder.cs" />
+    <Compile Include="Adapters\Desktop\SelectionAdapter.cs" />
+    <Compile Include="Adapters\Desktop\TextAdapter.cs" />
+    <Compile Include="Adapters\Desktop\ValueAdapter.cs" />
+    <Compile Include="Adapters\Desktop\VisibilityAdapter.cs" />
+    <Compile Include="Adapters\Web\WebAdapterBase.cs" />
+    <Compile Include="Adapters\Web\WebClickAdapter.cs" />
+    <Compile Include="Adapters\Web\WebFocusAdapter.cs" />
+    <Compile Include="Adapters\Web\WebEnableAdapter.cs" />
+    <Compile Include="Adapters\Web\WebInputAdapter.cs" />
+    <Compile Include="Adapters\Web\WebSelectionAdapter.cs" />
+    <Compile Include="Adapters\Web\WebTextAdapter.cs" />
+    <Compile Include="Adapters\Web\WebValueAdapter.cs" />
+    <Compile Include="Adapters\Web\WebVisibilityAdapter.cs" />
+    <Compile Include="Aspects\AutoRegisterAttribute.cs" />
+    <Compile Include="Aspects\LoggerHiddenAttribute.cs" />
+    <Compile Include="Aspects\LoggingInterceptionBehavior.cs" />
+    <Compile Include="Configuration\ISdkConfiguration.cs" />
+    <Compile Include="Services\Container\ISdkContainer.cs" />
+    <Compile Include="Services\Container\RegistrationType.cs" />
+    <Compile Include="Aspects\RetryAttribute.cs" />
+    <Compile Include="Aspects\RetryCallHandler.cs" />
+    <Compile Include="Configuration\AutomationSdkConfigurationSection.cs" />
+    <Compile Include="Configuration\SdkConfiguration.cs" />
+    <Compile Include="Constants\AutomationSearchProperties.cs" />
+    <Compile Include="Constants\ControlTypeNames.cs" />
+    <Compile Include="Services\ApplicationServices\IApplicationInfoContainer.cs" />
+    <Compile Include="Services\ApplicationServices\IApplicationInvoker.cs" />
+    <Compile Include="Services\Bootstrapping\BootstrapEventOrder.cs" />
+    <Compile Include="ControlDrivers\IElement.cs" />
+    <Compile Include="Services\Bootstrapping\BootstrapContainer.cs" />
+    <Compile Include="Services\Bootstrapping\IBootstrapContainer.cs" />
+    <Compile Include="Services\Bootstrapping\IBootstrapper.cs" />
+    <Compile Include="Services\Bootstrapping\IBootstrapConsumer.cs" />
+    <Compile Include="Services\Configuration\ConfigurationAccessor.cs" />
+    <Compile Include="Services\Configuration\IConfigurationAccessor.cs" />
+    <Compile Include="Services\Container\IFactory.cs" />
+    <Compile Include="Services\Container\IFactory.OneDependency.cs" />
+    <Compile Include="Services\Container\IWebDriverContainer.cs" />
+    <Compile Include="Enums\BrowserKind.cs" />
+    <Compile Include="Services\Container\SdkContainer.cs" />
+    <Compile Include="Services\Container\WebDriverContainer.cs" />
+    <Compile Include="Services\ControlConversion\ControlTypeConverterService.cs" />
+    <Compile Include="ControlDrivers\ElementContainer.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\By.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\VisualPath.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\ControlTypes.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\Scope.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\ILocatorProvider.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\IPageCollection.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\IWebPage.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Web\FindQuery.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\IWebMap.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Web\ParentDefiner.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Web\QueryBuilder.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Web\WebControlMap.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Web\WebMap.cs" />
+    <Compile Include="Enums\PlatformContextType.cs" />
+    <Compile Include="Services\Platform\PlatformContextSwitcher.cs" />
+    <Compile Include="Services\IRuntimeWatcher.cs" />
+    <Compile Include="Services\IWindowsServicesAccessor.cs" />
+    <Compile Include="Services\Keyboard\IModifierKeysStateHolder.cs" />
+    <Compile Include="Services\Keyboard\ModifierKeysStateHolder.cs" />
+    <Compile Include="Services\ResourcesServices\IProcessKiller.cs" />
+    <Compile Include="Services\ResourcesServices\ProcessKiller.cs" />
+    <Compile Include="Services\RuntimeWatcher.cs" />
+    <Compile Include="Services\ScreenCapturing\IScreenCapture.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Cache\VPathCache.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Options\OnlyVisibleOption.cs" />
+    <Compile Include="Services\SearchEngines\WebSearchEngine.cs" />
+    <Compile Include="Services\ExecutionContext\ExecutionContextDto.cs" />
+    <Compile Include="Services\ExecutionContext\ExecutionContextStorage.cs" />
+    <Compile Include="Services\ExecutionContext\IExecutionContextMemento.cs" />
+    <Compile Include="Services\ExecutionContext\IExecutionContextProvider.cs" />
+    <Compile Include="Services\FormattedString.cs" />
+    <Compile Include="Services\Logging\ILogger.cs" />
+    <Compile Include="Services\Logging\IProductLogger.cs" />
+    <Compile Include="Services\Logging\ProductLogger.cs" />
+    <Compile Include="Services\ResourcesServices\CompositeDisposableWithPriority.cs" />
+    <Compile Include="Services\ResourcesServices\DisposableWithPriority.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Options\IndexNumberOption.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Options\TreeScopeOption.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Options\VirtualizedOption.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Options\SearchOptions.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Maps\AutomationPropertyMap.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Maps\BoolAutomationPropertyMap.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Maps\ControlTypeAutomationPropertyMap.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Interfaces\ISearchOption.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Interfaces\ISearchAutomationProperty.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Interfaces\ISearchProperty.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Enums\SearchPropertyType.cs" />
+    <Compile Include="Services\SearchEngines\VPath\Maps\StringAutomationPropertyMap.cs" />
+    <Compile Include="Services\SearchEngines\VPath\VPathSearchEngine.cs" />
+    <Compile Include="Services\SearchEngines\LegacyControlsSearchEngineService.cs" />
+    <Compile Include="Services\AssertPredicate.cs" />
+    <Compile Include="Services\ClipboardServices\ClipboardCopyService.cs" />
+    <Compile Include="Services\Container\Factory.OneDependency.cs" />
+    <Compile Include="Services\ControlsFacade\ControlQueries.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\AutomationSearchBehavior.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\ControlConfiguration.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\ControlFindCommand.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\FluentConfiguration.cs" />
+    <Compile Include="Services\Adapters\ControlAdapterFactory.cs" />
+    <Compile Include="Services\ApplicationServices\ProcessService.cs" />
+    <Compile Include="Services\AutomationContainerExtension.cs" />
+    <Compile Include="Adapters\Desktop\ExpandAdapter.cs" />
+    <Compile Include="Services\ApplicationServices\ApplicationInvoker.cs" />
+    <Compile Include="Services\AutomationFacade.cs" />
+    <Compile Include="Services\Container\AutomationContainerExtensions.cs" />
+    <Compile Include="Services\Container\ContainerProvider.cs" />
+    <Compile Include="Services\Container\Factory.cs" />
+    <Compile Include="Adapters\IClickAdapter.cs" />
+    <Compile Include="Adapters\IExpandAdapter.cs" />
+    <Compile Include="Services\ControlsFacade\ControlFacade.cs" />
+    <Compile Include="Services\ControlsFacade\ControlNamingMapper.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\IControlConfiguration.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\IControlMapper.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\IncompleteControlFindingConfiguration.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\Desktop\IncompleteControlConfiguration.cs" />
+    <Compile Include="Services\ControlsFacade\Fluency\Controls\ControlMapper.cs" />
+    <Compile Include="Services\FileSystem\BackupFileService.cs" />
+    <Compile Include="Services\FileSystem\ConfigurationFileService.cs" />
+    <Compile Include="Services\FileSystem\FileService.cs" />
+    <Compile Include="Services\FileSystem\SafeFileService.cs" />
+    <Compile Include="Services\FileUtils.cs" />
+    <Compile Include="Adapters\IToggleAdapter.cs" />
+    <Compile Include="Adapters\Desktop\ToggleAdapter.cs" />
+    <Compile Include="Enums\MouseButton.cs" />
+    <Compile Include="Services\ContextStorage.cs" />
+    <Compile Include="Services\ControlConversion\ControlTypeConverter.cs" />
+    <Compile Include="Services\ControlConversion\ControlTypeMap.cs" />
+    <Compile Include="Services\Convert.cs" />
+    <Compile Include="Enums\Keyboard.cs" />
+    <Compile Include="Services\ControlConversion\IControlTypeMap.cs" />
+    <Compile Include="Services\Logging\Logger.cs" />
+    <Compile Include="Services\Methods.cs" />
+    <Compile Include="Services\ApplicationServices\IApplicationInfo.cs" />
+    <Compile Include="Services\ApplicationServices\DefaultApplicationInfo.cs" />
+    <Compile Include="Services\ApplicationServices\ApplicationInfoContainer.cs" />
+    <Compile Include="Services\Mouse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="ControlDrivers\Element.cs" />
+    <Compile Include="Services\Finder.cs" />
+    <Compile Include="ControlDrivers\UIAButton.cs" />
+    <Compile Include="ControlDrivers\UIACheckBox.cs" />
+    <Compile Include="ControlDrivers\UIAComboBox.cs" />
+    <Compile Include="ControlDrivers\UIACustom.cs" />
+    <Compile Include="ControlDrivers\UIADataGrid.cs" />
+    <Compile Include="ControlDrivers\UIADataItem.cs" />
+    <Compile Include="ControlDrivers\UIADocument.cs" />
+    <Compile Include="ControlDrivers\UIAEdit.cs" />
+    <Compile Include="ControlDrivers\UIAEventListener.cs" />
+    <Compile Include="Services\PrintUtils.cs" />
+    <Compile Include="Services\ResourcesServices\ProcessResourceMediator.cs" />
+    <Compile Include="Services\ResourcesServices\ResourceConsumer.cs" />
+    <Compile Include="Services\ScreenCapturing\ScreenCapture.cs" />
+    <Compile Include="Services\ShouldBeMonad.cs" />
+    <Compile Include="Services\Shouldly.cs" />
+    <Compile Include="Services\StringExtensions.cs" />
+    <Compile Include="Services\TeamCity\BuildStatus.cs" />
+    <Compile Include="Services\TeamCity\TeamCityMessageService.cs" />
+    <Compile Include="Services\Threading\IStaScheduler.cs" />
+    <Compile Include="Services\Threading\StaScheduler.cs" />
+    <Compile Include="Services\UIAExtensions.cs" />
+    <Compile Include="ControlDrivers\UIAGroup.cs" />
+    <Compile Include="ControlDrivers\UIAHeader.cs" />
+    <Compile Include="ControlDrivers\UIAHeaderItem.cs" />
+    <Compile Include="ControlDrivers\UIAHyperlink.cs" />
+    <Compile Include="ControlDrivers\UIAImage.cs" />
+    <Compile Include="ControlDrivers\UIAList.cs" />
+    <Compile Include="ControlDrivers\UIAListItem.cs" />
+    <Compile Include="ControlDrivers\UIAMenu.cs" />
+    <Compile Include="ControlDrivers\UIAMenuBar.cs" />
+    <Compile Include="ControlDrivers\UIAMenuItem.cs" />
+    <Compile Include="ControlDrivers\UIAPane.cs" />
+    <Compile Include="ControlDrivers\UIAProgressBar.cs" />
+    <Compile Include="ControlDrivers\UIARadioButton.cs" />
+    <Compile Include="ControlDrivers\UIAScrollBar.cs" />
+    <Compile Include="ControlDrivers\UIASlider.cs" />
+    <Compile Include="ControlDrivers\UIASpinner.cs" />
+    <Compile Include="ControlDrivers\UIASplitButton.cs" />
+    <Compile Include="ControlDrivers\UIATab.cs" />
+    <Compile Include="ControlDrivers\UIATabItem.cs" />
+    <Compile Include="ControlDrivers\UIATable.cs" />
+    <Compile Include="ControlDrivers\UIAText.cs" />
+    <Compile Include="ControlDrivers\UIAThumb.cs" />
+    <Compile Include="ControlDrivers\UIAToolBar.cs" />
+    <Compile Include="ControlDrivers\UIAToolTip.cs" />
+    <Compile Include="ControlDrivers\UIATree.cs" />
+    <Compile Include="ControlDrivers\UIATreeItem.cs" />
+    <Compile Include="ControlDrivers\UIAWindow.cs" />
+    <Compile Include="Services\WindowsServicesAccessor.cs" />
+    <Compile Include="SpecIds.cs" />
+    <Compile Include="Services\TestUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

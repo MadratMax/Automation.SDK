@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C66E71D2-D151-44A3-8CC5-EA91E3D1AF52}"
+	ProjectSection(SolutionItems) = preProject
+		App.config.transform = App.config.transform
+		AutomationSDK.nuspec = AutomationSDK.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.UIWrappers", "Automation.Sdk.UIWrappers\Automation.Sdk.UIWrappers.csproj", "{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.Bindings", "Automation.Sdk.Bindings\Automation.Sdk.Bindings.csproj", "{7F3E5E8B-9CB5-4147-83C4-1344B09D4ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.Extenders.Mail", "Automation.Sdk.Extenders.Mail\Automation.Sdk.Extenders.Mail.csproj", "{036C4CFA-6CE0-48BF-BCC5-2A5EB602EDEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.FunctionalTests", "Automation.Sdk.FunctionalTests\Automation.Sdk.FunctionalTests.csproj", "{E3AB8121-7BE0-495B-B3DF-D62128D5F332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.GenerationPlugin.SpecFlowPlugin", "Automation.Sdk.GenerationPlugin.SpecFlowPlugin\Automation.Sdk.GenerationPlugin.SpecFlowPlugin.csproj", "{09F75CED-6C8A-457B-AD23-9DF3384FE5B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.RuntimePlugin.SpecFlowPlugin", "Automation.Sdk.RuntimePlugin.SpecFlowPlugin\Automation.Sdk.RuntimePlugin.SpecFlowPlugin.csproj", "{70313EA4-88B5-406A-A7F5-6F2AF016FB95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Sdk.UIWrappers.Tests", "Automation.Sdk.UIWrappers.Tests\Automation.Sdk.UIWrappers.Tests.csproj", "{F580D5C5-FC4B-4002-B584-2B9CABC6A7F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8CDFAC-6C6B-41E7-9C57-9BAD0AF64F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3E5E8B-9CB5-4147-83C4-1344B09D4ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3E5E8B-9CB5-4147-83C4-1344B09D4ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3E5E8B-9CB5-4147-83C4-1344B09D4ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3E5E8B-9CB5-4147-83C4-1344B09D4ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036C4CFA-6CE0-48BF-BCC5-2A5EB602EDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C4CFA-6CE0-48BF-BCC5-2A5EB602EDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C4CFA-6CE0-48BF-BCC5-2A5EB602EDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C4CFA-6CE0-48BF-BCC5-2A5EB602EDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3AB8121-7BE0-495B-B3DF-D62128D5F332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AB8121-7BE0-495B-B3DF-D62128D5F332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AB8121-7BE0-495B-B3DF-D62128D5F332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AB8121-7BE0-495B-B3DF-D62128D5F332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F75CED-6C8A-457B-AD23-9DF3384FE5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F75CED-6C8A-457B-AD23-9DF3384FE5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F75CED-6C8A-457B-AD23-9DF3384FE5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F75CED-6C8A-457B-AD23-9DF3384FE5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70313EA4-88B5-406A-A7F5-6F2AF016FB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70313EA4-88B5-406A-A7F5-6F2AF016FB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70313EA4-88B5-406A-A7F5-6F2AF016FB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70313EA4-88B5-406A-A7F5-6F2AF016FB95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F580D5C5-FC4B-4002-B584-2B9CABC6A7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F580D5C5-FC4B-4002-B584-2B9CABC6A7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F580D5C5-FC4B-4002-B584-2B9CABC6A7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F580D5C5-FC4B-4002-B584-2B9CABC6A7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FDF4965-1DB7-4676-809B-24A87C95E77F}
+	EndGlobalSection
+EndGlobal
